@@ -1,6 +1,10 @@
 # tarsiers
 Powerful Polars is Terser with Tarsiers
 
+Tarsiers is an add-on to Polars enabling more concise expressions and
+less typing. It is _primarily_ intended for interactive use where
+quick iteration and concise code are most valuable.
+
 More symbol-like columns, as it should be! For simply named columns
 you can write `C.foo` instead of `pl.col("foo")`.
 

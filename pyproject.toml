@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tarsiers"
+version = "0.0.1"
+description = "Expression Extension for Polars"
+readme = "README.md"
+authors = [
+  {name = "Josh Magarick"},
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+keywords = ["dataframe", "polars"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha",
+]
+
+dependencies = ["polars"]
+
+[project.urls]
+"Homepage" = "https://github.com/magarick/tarsiers"
+"Bug Tracker" = "https://github.com/magarick/tarsiers/issues"

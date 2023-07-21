@@ -1,8 +1,6 @@
 import polars as pl
+from polars import selectors as cs
 
 N = pl.count()
 
-# Doesn't quite work yet. Don't want it to return one list per column
-# and we shouldn't have to know column names ahead of time
-
-#I = pl.all().agg_groups()
+I = cs.first().agg_groups().alias('idx')
